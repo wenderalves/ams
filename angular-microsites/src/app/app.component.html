@@ -1,13 +1,15 @@
-<main class="w-full min-h-screen flex flex-col items-center justify-start bg-gray-200 px-4 py-2">
+<main class="w-full min-h-screen flex flex-col items-center justify-start bg-gray-200 px-4">
   <div class="w-full flex flex-col items-center justify-start max-w-screen-md gap-4">
-    <div class="w-full flex flex-col items-center justify-start gap-4">
-      <div class="w-full overflow-hidden h-64 flex items-center justify-center rounded-lg">
+    <div class="w-full flex flex-col items-center justify-start">
+      <div class="w-screen overflow-hidden flex items-center justify-center">
         <img [src]="'/images/banner.png' | baseUrl" alt="banner" class="w-full">
       </div>
-      <a [href]="'/' | baseUrl" class="-mt-24 bg-gray-100 overflow-hidden border-6 border-white shadow-lg w-32 h-32 rounded-full p-3">
+      <a [href]="'/' | baseUrl"
+        class="-mt-16 bg-gray-100 overflow-hidden border-6 border-white
+         shadow-lg w-32 h-32 rounded-full p-3">
         <img [src]="'/images/logo.png' | baseUrl" alt="Logo" class="w-full">
       </a>
-      <h1 class="text-xl font-bold mb-4 align-center uppercase text-gray-700">Condomínio TSC 1 - Cambé</h1>
+      <h1 class="text-xl font-bold mb-4 align-center uppercase text-gray-700 mt-4">Condomínio TSC 1 - Cambé</h1>
     </div>
   </div>
   <router-outlet></router-outlet>

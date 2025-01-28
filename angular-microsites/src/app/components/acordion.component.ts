@@ -20,7 +20,7 @@ import { LucideAngularModule } from "lucide-angular";
                   <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
                   </span>
             </summary>
-            <p class="p-4 bg-white text-neutral-600 group-open:animate-fadeIn" [innerHTML]="describe"></p>
+            <p class="pt-0 px-4 pb-4 bg-white text-neutral-600 group-open:animate-fadeIn" [innerHTML]="describe"></p>
           </details>
         </div>
       </div>

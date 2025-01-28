@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { AcordionComponent } from "../components/acordion.component";
-import { Baby, Car, Dumbbell, PartyPopper, PawPrint, WavesLadder, FileText, LucideAngularModule } from "lucide-angular";
+import { Baby, Car, Dumbbell, PartyPopper, PawPrint, WavesLadder, FileText, LucideAngularModule, Hotel, Trash2, Drill, Package, Volleyball, Cctv, BadgePercent, SquareUser, Wallet } from "lucide-angular";
 import { BaseUrlPipe } from "../pipes/baseUrl.pipe";
 
 @Component({
@@ -36,13 +36,29 @@ export class RegimentoComponent {
 
   regras = [
     {
-      title: 'Piscina',
-      icon: WavesLadder,
+      title: 'Disposições Gerais',
+      icon: Hotel,
       describe: `
         <ol class="list-decimal list-inside">
-          <li>Proibido nadar de roupa normal.</li>
-          <li>Proibido pular ou fazer acrobacias.</li>
-          <li>Proibido crianças menores de 12 anos permanecer sem o acompanhamento de um responsável maior.</li>
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Lixo',
+      icon: Trash2,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Reformas',
+      icon: Drill,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
         </ol>
       `
     },
@@ -58,13 +74,33 @@ export class RegimentoComponent {
       `
     },
     {
-      title: 'Salão de Festas',
+      title: 'Mudanças',
+      icon: Package,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Salão de Festas/Churrasqueira',
       icon: PartyPopper,
       describe: `
         <ol class="list-decimal list-inside">
           <li>Reservas devem ser feitas com antecedência.</li>
           <li>O salão deve ser entregue limpo e organizado após o uso.</li>
           <li>É proibido usar o salão para fins comerciais ou políticos.</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Piscina',
+      icon: WavesLadder,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>Proibido nadar de roupa normal.</li>
+          <li>Proibido pular ou fazer acrobacias.</li>
+          <li>Proibido crianças menores de 12 anos permanecer sem o acompanhamento de um responsável maior.</li>
         </ol>
       `
     },
@@ -91,6 +127,15 @@ export class RegimentoComponent {
       `
     },
     {
+      title: 'Quadra',
+      icon: Volleyball,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
       title: 'Espaço Pet',
       icon: PawPrint,
       describe: `
@@ -100,7 +145,43 @@ export class RegimentoComponent {
           <li>O dono deve recolher os excrementos do animal.</li>
         </ol>
       `
-    }
+    },
+    {
+      title: 'Câmeras',
+      icon: Cctv,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Taxas Condominiais',
+      icon: BadgePercent,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Empregados/Terceiros',
+      icon: SquareUser,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
+    {
+      title: 'Penalidades',
+      icon: Wallet,
+      describe: `
+        <ol class="list-decimal list-inside">
+          <li>....</li>
+        </ol>
+      `
+    },
   ];
 
 }
