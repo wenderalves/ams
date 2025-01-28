@@ -33,6 +33,7 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/ams/",
               "budgets": [
                 {
                   "type": "initial",
