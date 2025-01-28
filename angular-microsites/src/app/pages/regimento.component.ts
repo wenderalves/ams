@@ -1,17 +1,19 @@
 import { Component } from "@angular/core";
 import { AcordionComponent } from "../components/acordion.component";
 import { Baby, Car, Dumbbell, PartyPopper, PawPrint, WavesLadder, FileText, LucideAngularModule } from "lucide-angular";
+import { BaseUrlPipe } from "../pipes/baseUrl.pipe";
 
 @Component({
   selector: 'regimento',
-  imports: [AcordionComponent, LucideAngularModule],
+  imports: [AcordionComponent, LucideAngularModule, BaseUrlPipe],
   template: `
   <div class="flex flex-col items-center min-w-screen gap-4 p-4">
     <h2 class="text-md font-bold text-gray-800">
         REGIMENTO INTERNO
     </h2>
     <section class="w-full flex flex-col items-center justify-start gap-2">
-      <a class="flex gap-2 text-center p-2 border-2 border-gray-500 text-gray-500" href="/documentos/regimento.pdf">
+      <a class="flex gap-2 text-center p-2 border-2 border-gray-500 text-gray-500"
+      [href]="'/documentos/regimento.pdf' | baseUrl" target="_blank">
         <lucide-angular [img]="FileText" class="w-8"></lucide-angular>
         <span class="font-medium">Fazer Download do regimento.</span>
       </a>

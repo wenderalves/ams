@@ -2,16 +2,17 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 // import { RouterOutlet } from '@angular/router';
 import { LucideAngularModule, BookOpenText, UserRound, Building2, Heart } from 'lucide-angular';
+import { BaseUrlPipe } from '../pipes/baseUrl.pipe';
 
 @Component({
   selector: 'app-home',
-  imports: [LucideAngularModule, CommonModule],
+  imports: [LucideAngularModule, CommonModule, BaseUrlPipe],
   template: `
     <div class="flex flex-col w-full gap-12">
         <!-- sessao de links -->
         <section class="w-full flex flex-col items-center justify-start gap-4">
           @for(link of blocks.links; track $index) {
-          <a [href]="link.href" class="w-full flex flex-row items-center justify-start p-2 bg-white rounded-lg shadow-lg">
+          <a [href]="link.href | baseUrl" class="w-full flex flex-row items-center justify-start p-2 bg-white rounded-lg shadow-lg">
             <div class="w-12 h-full flex items-start justify-start p-1 text-gray-700">
               <lucide-angular [img]="link.icon" class="w-full"></lucide-angular>
             </div>
@@ -26,7 +27,7 @@ import { LucideAngularModule, BookOpenText, UserRound, Building2, Heart } from '
         <!-- sessao de banners -->
         <section class="w-full flex flex-col items-center justify-start gap-4">
           @for(banner of blocks.banners; track $index) {
-            <a [href]="banner.href" [ngStyle]="{'background-image': 'linear-gradient(rgb(214 214 214 / 36%), rgb(234 234 234 / 90%)), url(' + banner.image + ')'}"
+            <a [href]="banner.href | baseUrl" [ngStyle]="{'background-image': 'linear-gradient(rgb(214 214 214 / 36%), rgb(234 234 234 / 90%)), url(' + getUrl(banner.image) + ')'}"
             class="relative overflow-hidden p-4  bg-cover bg-center bg-opacity-70 border-4 border-white rounded-lg shadow-lg flex items-start justify-end flex-col w-full min-h-[200px]">
               <h2 class="text-lg font-bold text-gray-700">{{banner.title}}</h2>
               <p class="text-xs text-gray-700">
@@ -48,7 +49,9 @@ import { LucideAngularModule, BookOpenText, UserRound, Building2, Heart } from '
 export class HomeComponent {
   readonly Heart = Heart; // icone
 
-  title = 'angular-microsites';
+  getUrl(path: string) {
+    return BaseUrlPipe.getUrl(path);
+  }
 
   readonly blocks = {
     links: [
@@ -68,7 +71,7 @@ export class HomeComponent {
         title: 'Regimento Interno',
         describe: 'Clique aqui para ver o Regimento Interno.',
         icon: BookOpenText,
-        href: '/regimento'
+        href: '#/regimento'
       },
       {
         title: 'Fale com a Administradora',
