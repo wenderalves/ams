@@ -8,7 +8,7 @@
     "corPrimaria": "#000000"
   },
   "config": {
-    "limitarGeolocalizacao": true,
+    "limitarGeolocalizacao": false,
     "latitude": -23.310131,
     "longitude": -51.236947,
     "raioPermitidoKm": 1

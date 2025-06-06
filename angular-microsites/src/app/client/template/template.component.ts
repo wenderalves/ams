@@ -55,7 +55,7 @@ export class TemplateComponent {
     effect(() => {
       if (Object.keys(this.dataClient.data()).length > 0) {
         this.dataPage = this.dataClient.data();
-
+        /**
         if (this.dataPage.config['limitarGeolocalizacao']) {
           this.geoService.getCoordsBrowser().then((location: any) => {
             const permiteDistancia = this.geoService.isAllowedDistance(
@@ -78,6 +78,7 @@ export class TemplateComponent {
             });
           });
         }
+        */
       }
     });
 

@@ -9,6 +9,7 @@ export class DataService {
   private timeCache = 60 * 60 * 1000; // 1 hour
   private NameConfigCache = 'cc_config'; // config cache name
   private NameConfigs = 'configs';
+  private NameClient = 'cli'
 
   constructor(private httpClient: HttpClient) {
     if (!this.isCacheExpired()) {
@@ -22,13 +23,17 @@ export class DataService {
   }
 
   getData(client: string | null) {
+    const clientSlug = localStorage.getItem(this.NameClient);
     if (!client) { return of(); }
-    if (localStorage.getItem(this.NameConfigs) && !this.isCacheExpired()) {
-      this.data.set(this.getDataStorage() || '{}');
-      return of();
+    if (clientSlug && clientSlug === client) {
+      if (localStorage.getItem(this.NameConfigs) && !this.isCacheExpired()) {
+        this.data.set(this.getDataStorage() || '{}');
+        return of();
+      }
     }
     return this.httpClient.get(`/data/${client}.json`).pipe(
       tap((data: any) => {
+        localStorage.setItem(this.NameClient, client);
         this.setDataStorage(data);
         this.setCache();
         this.configLoaded.next(true);
