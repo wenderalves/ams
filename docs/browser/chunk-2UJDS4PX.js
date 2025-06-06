@@ -1,0 +1,1 @@
+import{Za as o,ya as t}from"./chunk-YAUTG46X.js";import"./chunk-FDERIQAA.js";var a=class n{constructor(){}ngOnInit(){}static \u0275fac=function(e){return new(e||n)};static \u0275cmp=t({type:n,selectors:[["app-dashboard"]],decls:1,vars:0,template:function(e,i){e&1&&o(0," Dashboard ")},encapsulation:2})};export{a as DashboardComponent};

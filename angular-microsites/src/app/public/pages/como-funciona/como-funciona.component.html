@@ -1,0 +1,42 @@
+<!-- Header -->
+<header class="bg-white md:fixed w-full z-10">
+  <nav class="container mx-auto px-4 py-4 flex items-center justify-center md:justify-between">
+    <div class="text-2xl font-normal text-gray-600 flex gap-2">
+      <img src="/logo.svg" class="w-12" /> <span><b>Comu</b>link</span>
+    </div>
+    <div class="hidden md:flex space-x-6">
+      <a href="como-funciona" class="text-blue-600 px-4 py-2 rounded-lg transition-colors">Como Funciona</a>
+      <a [href]="contato"
+        class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">Contato</a>
+    </div>
+  </nav>
+</header>
+
+<section id="contato" class="py-32 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    AQUI COLOCO COMO FUNCIONA
+  </div>
+</section>
+
+<!-- Contato Section -->
+<section id="contato" class="py-32 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2
+      class="text-center text-2xl md:text-3xl font-normal text-gray-800 fade-in leading-7 tracking-tight md:leading-10 mb-8">
+      Pronto para começar?</h2>
+    <p class="text-xl text-gray-500 mb-8 max-w-2xl mx-auto fade-in leading-5">
+      Entre em contato conosco e descubra como podemos ajudar seu condomínio.
+    </p>
+    <a href="mailto:wender_net@hotmail.com"
+      class="inline-block bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+      Falar com um especialista
+    </a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto px-4 text-center">
+    <p>&copy; {{ anoAtual }} Comulink. Todos os direitos reservados.</p>
+  </div>
+</footer>

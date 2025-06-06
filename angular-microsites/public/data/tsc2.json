@@ -1,0 +1,159 @@
+{
+  "domain": "tsc2",
+  "name": "Condomínio TSC 2 - Cambé",
+  "description": "Terra de santa cruz 1",
+  "logo": "/images/logo.png",
+  "banner": "/images/banner.png",
+  "theme": {
+    "corPrimaria": "#000000"
+  },
+  "config": {
+    "limitarGeolocalizacao": true,
+    "latitude": -23.310131,
+    "longitude": -51.236947,
+    "raioPermitidoKm": 1
+  },
+  "pages": {
+    "home": {
+      "blocos": [
+        {
+          "type": "links",
+          "dados": [
+            {
+              "title": "Regimento Interno",
+              "describe": "Clique aqui para ver o Regimento Interno.",
+              "icon": "livro",
+              "href": "../regimento"
+            },
+            {
+              "title": "Fale com a Administradora",
+              "describe": "Clique aqui para falar com a Administradora do condomínio.",
+              "icon": "empresa",
+              "href": "https://planning.com21.com.br/fale-conosco"
+            }
+          ]
+        },
+        {
+          "type": "banners",
+          "dados": [
+            {
+              "title": "Arquivos de projeto",
+              "describe": "Aqui você encontra os arquivos de projeto do condomínio.",
+              "image": "https://img.cdndsgni.com/preview/13078640.jpg",
+              "onlyBanner": true,
+              "emBreve": true,
+              "href": "/"
+            }
+          ]
+        },
+        {
+          "type": "links",
+          "dados": [
+            {
+              "title": "Fale com o síndico(a)",
+              "describe": "Clique aqui para falar com o síndico(a).",
+              "icon": "user",
+              "href": "https://wa.me/554398419137"
+            }
+          ]
+        }
+      ]
+    },
+    "regimento": {
+      "titulo": "Regimento Interno",
+      "blocos": [
+        {
+          "type": "links",
+          "dados": [
+            {
+              "title": "Regimento Interno",
+              "describe": "Fazer Download do regimento.",
+              "icon": "arquivoTexto",
+              "href": "/documentos/regimento.pdf"
+            }
+          ]
+        },
+        {
+          "type": "acordions",
+          "dados": [
+            {
+              "title": "Disposições Gerais",
+              "icon": "hotel",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Lixo",
+              "icon": "lixo",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Reformas",
+              "icon": "obras",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Garagens",
+              "icon": "carro",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>O condomínio não se responsabiliza por danos ou roubos.</li><li>É proibido usar a garagem para consertos de veículos, exceto em emergências.</li><li>É proibido estacionar na garagem de outro morador sem autorização.</li></ol>"
+            },
+            {
+              "title": "Mudanças",
+              "icon": "pacote",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Salão de Festas/Churrasqueira",
+              "icon": "festa",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>Reservas devem ser feitas com antecedência.</li><li>O salão deve ser entregue limpo e organizado após o uso.</li><li>É proibido usar o salão para fins comerciais ou políticos.</li></ol>"
+            },
+            {
+              "title": "Piscina",
+              "icon": "piscina",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>Proibido nadar de roupa normal.</li><li>Proibido pular ou fazer acrobacias.</li><li>Proibido crianças menores de 12 anos permanecer sem o acompanhamento de um responsável maior.</li></ol>"
+            },
+            {
+              "title": "Playground",
+              "icon": "bebe",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>Horário de uso: 8h às 22h.</li><li>Idade máxima permitida: 11 anos.</li><li>Crianças devem estar acompanhadas por um responsável.</li></ol>"
+            },
+            {
+              "title": "Academia ao Ar Livre",
+              "icon": "academia",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>Horário de uso: 6h às 24h.</li><li>Uso permitido apenas para maiores de 12 anos.</li><li>Visitantes não podem usar a academia.</li></ol>"
+            },
+            {
+              "title": "Quadra",
+              "icon": "bola",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Espaço Pet",
+              "icon": "pet",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>Uso exclusivo para animais dos moradores.</li><li>É proibido levar filhotes não vacinados.</li><li>O dono deve recolher os excrementos do animal.</li></ol>"
+            },
+            {
+              "title": "Câmeras",
+              "icon": "camera",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Taxas Condominiais",
+              "icon": "taxa",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Empregados/Terceiros",
+              "icon": "user2",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            },
+            {
+              "title": "Penalidades",
+              "icon": "carteira",
+              "describe": "<ol class=\"list-decimal list-inside\"><li>....</li></ol>"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

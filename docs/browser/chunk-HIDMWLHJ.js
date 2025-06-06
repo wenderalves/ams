@@ -1,0 +1,1 @@
+var o={contato:"https://api.whatsapp.com/send?phone=5543988162710&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Comulink",anoAtual:new Date().getFullYear()};export{o as a};

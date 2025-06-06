@@ -1,0 +1,89 @@
+{
+  "domain": "tsc1",
+  "name": "Condomínio TSC 1 - Cambé",
+  "description": "Terra de santa cruz 1",
+  "logo": "/images/logo.png",
+  "banner": "/images/banner.png",
+  "theme": {
+    "corPrimaria": "#000000"
+  },
+  "config": {
+    "limitarGeolocalizacao": true,
+    "latitude": -23.310131,
+    "longitude": -51.236947,
+    "raioPermitidoKm": 1
+  },
+  "pages": {
+      "home": {
+          "blocos": [
+            {
+              "type": "links",
+              "dados": [
+                {
+                  "title": "Regimento Interno",
+                  "describe": "Fazer Download do regimento.",
+                  "icon": "arquivoTexto",
+                  "href": "https://1drv.ms/b/c/50d2741ad1d301a7/EVbjrtLEHEpBnx6ZYZ1P-t4BqvvQDbw-tWKWDfcapKsFKQ?e=gQhvz7"
+                },
+                {
+                  "title": "Perguntas Frequentes",
+                  "describe": "Clique aqui para ver as principais dúvidas sobre nosso condomínio.",
+                  "icon": "help",
+                  "href": "../faq"
+                },
+                {
+                  "title": "Fale com a Administradora",
+                  "describe": "Clique aqui para falar com a Administradora do condomínio.",
+                  "icon": "empresa",
+                  "href": "https://planning.com21.com.br/fale-conosco"
+                }
+              ]
+            },
+            {
+              "type": "banners",
+              "dados":[
+                  {
+                    "title": "Arquivos e Manuais",
+                    "describe": "Aqui você encontra os arquivos/manuais referente as unidades do condomínio.",
+                    "image": "/images/projetos2.png",
+                    "emBreve": false,
+                    "href": "https://1drv.ms/f/c/50d2741ad1d301a7/EtDKycvBZEFKu22LyRQdXfoBHlC2JE5cOC_j7DvrCfSaXg?e=y3IpQK"
+                  }
+              ]
+            },
+            {
+              "type": "links",
+              "dados": [
+                {
+                  "title": "Fale com o síndico(a)",
+                  "describe": "Clique aqui para falar com o síndico(a).",
+                  "icon": "user",
+                  "href": "https://wa.me/554398419137"
+                },
+                {
+                  "title": "Compartilhar",
+                  "describe": "Compartilhe a página do condomínio com seus vizinhos.",
+                  "icon": "qrcode",
+                  "href": "../shared"
+                }
+              ]
+            }
+          ]
+      },
+      "faq": {
+        "titulo": "Perguntas Frequentes",
+        "blocos": [
+          {
+            "type": "acordions",
+            "dados": [
+              {
+                "title": "Como tirar a segunda via do boleto do gás?",
+                "describe": "<ol class=\"list-decimal list-inside\"><li>Entre no site da ultragaz. (www.ultragaz.com.br)</li><li>clique em já sou cliente. ou <a href=\"https://www.mi.minhaultragaz.com.br/\" target=\"_blank\" class=\"text-blue-500\">neste link</a> para acessar a área do cliente.</li><li>Logo abaixo dos acessos você vai encontrar uma sessão chamada boleto rápido.</li><li>Coloque o CPF/CNPJ que está cadastrado no sistema e siga os passos.</li></ol>"
+              }
+            ]
+          }
+        ]
+
+      }
+  }
+}

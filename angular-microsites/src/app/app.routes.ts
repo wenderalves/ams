@@ -2,11 +2,15 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
     {
-        path: '',
-        loadComponent: () => import('./pages/home.components').then(m => m.HomeComponent)
+        path: 'admin',
+        loadChildren: () => import('./admin/admin.routes').then(m => m.routes),
     },
     {
-        path: 'regimento',
-        loadComponent: () => import('./pages/regimento.component').then(m => m.RegimentoComponent)
-    }
+        path: 'client/:client',
+        loadChildren: () => import('./client/client.rotes').then(m => m.routes),
+    },
+    {
+        path: '',
+        loadChildren: () => import('./public/public.routes').then(m => m.routes),
+    },
 ];

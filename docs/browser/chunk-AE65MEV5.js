@@ -1,0 +1,1 @@
+import{Za as o,ya as t}from"./chunk-YAUTG46X.js";import"./chunk-FDERIQAA.js";var i=class e{constructor(){}ngOnInit(){}static \u0275fac=function(n){return new(n||e)};static \u0275cmp=t({type:e,selectors:[["app-login"]],decls:1,vars:0,template:function(n,s){n&1&&o(0," LOGIN ")},encapsulation:2})};export{i as LoginComponent};
